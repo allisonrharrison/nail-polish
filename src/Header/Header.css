@@ -1,0 +1,17 @@
+#header {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+}
+
+#social-media {
+  flex-grow: 1;
+}
+
+#logo {
+  flex-grow: 1;
+}
+
+#user-portal {
+  flex-grow: 1;
+}
