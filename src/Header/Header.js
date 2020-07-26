@@ -1,6 +1,5 @@
-import React from 'react';
-import './Header.css';
-import { Row } from 'reactstrap';
+import React from "react";
+import "./Header.css";
 
 class Header extends React.Component {
   render() {
@@ -11,7 +10,7 @@ class Header extends React.Component {
           <p>follow us on social media</p>
         </div>
         <div id="logo">
-          <h1>ILNP</h1>
+          <p><strong>ILNP</strong></p>
           <p>Boutique Nail Polish</p>
         </div>
         <div id="user-portal">
@@ -19,8 +18,8 @@ class Header extends React.Component {
           <p>Compare My Cart Account</p>
         </div>
       </div>
-    )
-  };
+    );
+  }
 }
 
 export default Header;
