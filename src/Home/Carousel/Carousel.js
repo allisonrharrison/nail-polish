@@ -14,9 +14,9 @@ class CarouselComponent extends React.Component {
         stopAutoPlayOnHover={true}
         addArrowClickHandler={true}
       >
-        <img src={"https://i.imgur.com/Y59LSyH.png"} />
-        <img src={"https://i.imgur.com/NCdzliy.png"} />
-        <img src={"https://i.imgur.com/jrNebZg.png"} />
+        <img src={"https://i.imgur.com/Y59LSyH.png"} alt="Snowed In Collection"/>
+        <img src={"https://i.imgur.com/NCdzliy.png"} alt="Monarchy Collection"/>
+        <img src={"https://i.imgur.com/jrNebZg.png"} alt="Nine to Five Collection"/>
       </Carousel>
     );
   }
