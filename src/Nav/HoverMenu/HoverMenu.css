@@ -1,0 +1,11 @@
+.hover-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+}
