@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import Nav from "../Nav/Nav";
 import Home from "../Home/Home";
 import Footer from "../Footer/Footer";
+import './fontawesome';
 
 class App extends React.Component {
   render() {
