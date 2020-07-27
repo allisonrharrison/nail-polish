@@ -2,17 +2,38 @@
   background-color: lightblue;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-around;
+}
+
+#header p {
+  text-transform: uppercase;
 }
 
 #social-media {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #logo {
-  flex-grow: 1;
+  flex-grow: 4;
+}
+
+#ilnp, #boutique {
+margin: 1% 0 0 0;
 }
 
 #user-portal {
+  display: flex;
+  flex-direction: row;
   flex-grow: 1;
+  justify-content: space-evenly;
+  align-self: center;
 }

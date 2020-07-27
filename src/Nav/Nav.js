@@ -3,18 +3,24 @@ import "./Nav.css";
 import SearchBar from "./SearchBar/SearchBar";
 import HoverMenu from "./HoverMenu/HoverMenu";
 import { menus } from "./menus";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Nav extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isDisplayed: false,
+      isHovered: false,
       id: "",
       title: "",
       firstLink: "",
       secondLink: "",
       image: "",
+      holographics: 'angle-down',
+      chromes: 'angle-down',
+      metallics: 'angle-down',
+      jellies: 'angle-down',
+      shimmers: 'angle-down',
     };
     this.displayMenu = this.displayMenu.bind(this);
     this.hideMenu = this.hideMenu.bind(this);
@@ -33,6 +39,9 @@ class Nav extends React.Component {
           menus[0].secondLink,
           menus[0].image
         );
+          this.setState({
+            holographics: 'angle-up'
+          });
         break;
       case "nav-chromes":
         this.displayMenu(
@@ -42,6 +51,9 @@ class Nav extends React.Component {
           menus[1].secondLink,
           menus[1].image
         );
+          this.setState({
+            chromes: 'angle-up'
+          });
         break;
       case "nav-metallics":
         this.displayMenu(
@@ -51,6 +63,9 @@ class Nav extends React.Component {
           menus[2].secondLink,
           menus[2].image
         );
+          this.setState({
+            metallics: 'angle-up'
+          });
         break;
       case "nav-jellies":
         this.displayMenu(
@@ -60,6 +75,9 @@ class Nav extends React.Component {
           menus[3].secondLink,
           menus[0].image
         );
+          this.setState({
+            jellies: 'angle-up'
+          });
         break;
       case "nav-shimmers":
         this.displayMenu(
@@ -69,6 +87,9 @@ class Nav extends React.Component {
           menus[4].secondLink,
           menus[4].image
         );
+          this.setState({
+           shimmers: 'angle-up'
+          });
         break;
       default:
         console.log("default");
@@ -86,7 +107,7 @@ class Nav extends React.Component {
       image: image,
     });
     console.log(this.state.id);
-  }
+  };
 
   // Hide Menu
   hideMenu() {
@@ -97,30 +118,34 @@ class Nav extends React.Component {
       firstLink: "",
       secondLink: "",
       image: "",
+      holographics: 'angle-down',
+      chromes: 'angle-down',
+      metallics: 'angle-down',
+      jellies: 'angle-down',
+      shimmers: 'angle-down'
     });
-    console.log(this.state.id);
-  }
+  };
 
   render() {
     return (
       <div id="nav" onMouseLeave={this.hideMenu}>
         <div id="main-nav">
-          <div id="nav-home">HOME</div>
+          <div id="nav-home">HOME </div>
           <div id="nav-all">ALL NAIL POLISH</div>
           <div id="nav-holographics" onMouseEnter={this.passPropsToMenu}>
-            HOLOGRAPHICS
+            HOLOGRAPHICS <FontAwesomeIcon icon={this.state.holographics} />
           </div>
           <div id="nav-chromes" onMouseEnter={this.passPropsToMenu}>
-            ULTRA CHROMES
+            ULTRA CHROMES <FontAwesomeIcon icon={this.state.chromes} />
           </div>
           <div id="nav-metallics" onMouseEnter={this.passPropsToMenu}>
-            ULTRA METALLICS
+            ULTRA METALLICS <FontAwesomeIcon icon={this.state.metallics} />
           </div>
           <div id="nav-jellies" onMouseEnter={this.passPropsToMenu}>
-            JELLIES
+            JELLIES <FontAwesomeIcon icon={this.state.jellies} />
           </div>
           <div id="nav-shimmers" onMouseEnter={this.passPropsToMenu}>
-            SHIMMERS
+            SHIMMERS <FontAwesomeIcon icon={this.state.shimmers} />
           </div>
           <div id="nav-giftcards">GIFT CARDS</div>
           <SearchBar />

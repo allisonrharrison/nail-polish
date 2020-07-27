@@ -1,13 +1,14 @@
 import React from "react";
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class CarouselComponent extends React.Component {
   render() {
     return (
       <Carousel
-        arrowLeft={<button>PREVIOUS</button>}
-        arrowRight={<button>NEXT</button>}
+        arrowLeft={<button><FontAwesomeIcon icon="angle-left" /></button>}
+        arrowRight={<button><FontAwesomeIcon icon="angle-right" /></button>}
         autoPlay={4000}
         animationSpeed={1000}
         infinite={true}

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Footer extends React.Component {
   render() {
@@ -40,8 +41,14 @@ class Footer extends React.Component {
           <a href="">Cookies</a>
         </div>
         <div id="follow-us">
-          <p>Follow us on</p>
-          <p>icons</p>
+          <p style={{textAlign: 'center'}}>Follow us on</p>
+          <div className="social-icons">
+          <FontAwesomeIcon icon={['fab', 'twitter']} />
+          <FontAwesomeIcon icon={['fab', 'facebook']} />
+          <FontAwesomeIcon icon={['fab', 'instagram']} />
+          <FontAwesomeIcon icon={['fab', 'youtube']} />
+          <FontAwesomeIcon icon={['fab', 'pinterest']} />
+          </div>
         </div>
       </div>
     )
