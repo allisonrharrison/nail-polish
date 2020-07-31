@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/nail-polish/static/css/main.6e0501c9.chunk.css",
+    "main.js": "/nail-polish/static/js/main.3b3bc8d2.chunk.js",
+    "main.js.map": "/nail-polish/static/js/main.3b3bc8d2.chunk.js.map",
+    "runtime-main.js": "/nail-polish/static/js/runtime-main.22ba6766.js",
+    "runtime-main.js.map": "/nail-polish/static/js/runtime-main.22ba6766.js.map",
+    "static/css/2.f4bde6ca.chunk.css": "/nail-polish/static/css/2.f4bde6ca.chunk.css",
+    "static/js/2.5c49cc12.chunk.js": "/nail-polish/static/js/2.5c49cc12.chunk.js",
+    "static/js/2.5c49cc12.chunk.js.map": "/nail-polish/static/js/2.5c49cc12.chunk.js.map",
+    "index.html": "/nail-polish/index.html",
+    "precache-manifest.d11009a639d6be803b442acdaa5e3653.js": "/nail-polish/precache-manifest.d11009a639d6be803b442acdaa5e3653.js",
+    "service-worker.js": "/nail-polish/service-worker.js",
+    "static/css/2.f4bde6ca.chunk.css.map": "/nail-polish/static/css/2.f4bde6ca.chunk.css.map",
+    "static/css/main.6e0501c9.chunk.css.map": "/nail-polish/static/css/main.6e0501c9.chunk.css.map",
+    "static/js/2.5c49cc12.chunk.js.LICENSE.txt": "/nail-polish/static/js/2.5c49cc12.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22ba6766.js",
+    "static/css/2.f4bde6ca.chunk.css",
+    "static/js/2.5c49cc12.chunk.js",
+    "static/css/main.6e0501c9.chunk.css",
+    "static/js/main.3b3bc8d2.chunk.js"
+  ]
+}
